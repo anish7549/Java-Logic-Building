@@ -14,8 +14,5 @@ public class simpleIntrest {
 
         int simple_intrest = ((principal_Ammount * rate_Of_Intrest * time)/100);
         System.out.print("Simple intrest is = "+simple_intrest);
-
-
-
     }
 }
