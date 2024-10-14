@@ -19,7 +19,7 @@ public class BinarySearch {
         // Start the binary search loop; it will run as long as the search range is valid (low <= high)
         while (low <= high) {
             // Calculate the mid index (mid-point of the current search range)
-            int mid = low + high / 2;
+            int mid = (low + high) / 2;
 
             // Check if the key matches the element at the mid index
             if (key == arr[mid]) {
@@ -37,5 +37,9 @@ public class BinarySearch {
             }
         }
         // If the key is not found in the array, no output is printed in this version of the code
+        if(low>high)
+        {
+            System.out.print("Key not found");
+        }
     }
 }
